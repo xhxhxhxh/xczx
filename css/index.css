@@ -1,0 +1,256 @@
+/*banner start*/
+.banner {
+	height: 420px;
+	background-color: #1c036c;
+}
+.banner .w {
+	position: relative;
+}
+.subnav {
+	width: 190px;
+	height: 420px;
+	background: rgba(0,0,0,.2);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.subnav ul {
+	margin-top: 12px;
+}
+.subnav li {
+	height: 44px;
+	padding: 0 20px;
+	line-height: 44px;
+}
+.subnav a {
+	font-size: 14px;
+	color: #f4f4f6;
+	text-decoration: none;
+	float: left;
+}
+.subnav i {
+	font-size: 14px;
+	color: #f4f4f6;
+	float: right;
+	font-family: "icomoon";
+}
+.subnav li:hover a, .subnav li:hover i {
+	color: #00b4ff;
+}
+/*小圆点部分*/
+.spot {
+	width: 168px;
+	height: 28px;
+	position: absolute;
+	left: 50%;
+	bottom: 26px;
+	margin-left: -113px;
+}
+.spot li {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: rgba(255,255,255,.4);
+	float: left;
+	margin: 8px;
+	position: relative;
+}
+.spot li a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+	position: relative;
+	z-index: 1;
+}
+.spot li::after{
+	content: "";
+	width: 0px;
+	height: 12px;
+	border-radius: 6px;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -6px;
+	transition: all .3s;
+}
+.spot li:hover::after {
+	width: 20px;
+	/*transform: scale(1.67,1);*/
+}
+/*课程表部分*/
+.timebook {
+	height: 300px;
+	width: 228px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate(0,-50%);
+	background-color: #fff;
+}
+.timebook a {
+	text-decoration: none;
+}
+.timebook dt {
+	height: 48px;
+	text-align: center;
+	color: #fff;
+	background-color: #9bceea;
+	font-size: 18px;
+	line-height: 48px;
+	margin-bottom: 12px;
+}
+.timebook dd {
+	height: 59px;
+	margin: 0 18px;
+	border-bottom: 1px solid #efefef;
+}
+.timebook dd:last-child {
+	border: 0;
+}
+.timebook dd a {
+	display: block;
+	height: 59px;
+	padding: 14px 0 12px 0;
+}
+.timebook dd p:first-child {
+	font-size: 14px;
+	color: #4e4e4e;
+}
+.timebook dd p:last-child {
+	font-size: 12px;
+	color: #a5a5a5;
+}
+.timebook .kecheng {
+	display: block;
+	width: 200px;
+	height: 40px;
+	border: 1px solid #22b0ff;
+	color: #00a4ff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;
+	margin: 12px 14px 0;
+}
+.timebook dd a:hover p {
+	color: #26abff;
+}
+.timebook .kecheng:hover {
+	background-color: #22b0ff;
+	color: #fff;
+}
+/*banner end
+/*精品推荐部分*/
+.tuijian {
+	height: 60px;
+	margin-top: 8px;
+	background-color: #fff;
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.tuijian li {
+	height: 60px;
+	line-height: 60px;
+	width: 132px;
+	float: left;
+	text-align: center;
+}
+.tuijian a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #050505;
+}
+.tuijian span {
+	display: block;
+	width: 1px;
+	height: 16px;
+	background-color: #bfbfbf;
+	float: left;
+	margin-top:22px;
+}
+.interest {
+	height: 60px;
+	width: 178px;
+	text-align: center;
+	line-height: 60px;
+	float: right;
+}
+.tuijian a:hover {
+	color: #00a4ff;
+}
+/*精品部分start*/
+.jingpin {
+	height: 633px;
+	margin-top: 17px;
+}
+.jingpin_head {
+	height: 60px;
+	line-height: 60px;
+}
+.jingpin_head span {
+	font-size: 18px;
+	color: #494949;
+	float: left;
+}
+.jingpin_head a {
+	font-size: 12px;
+	text-decoration: none;
+	color: #a5a5a5;
+	float: right;
+	margin-right: 30px;
+}
+.jingpin_head a:hover {
+	color: #00a4ff;
+}
+.jingpin_body {
+	height: 573px;
+}
+.jingpin_body li {
+	width: 228px;
+	height: 270px;
+	background-color: #fff;
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	transition: all .3s;
+}
+.jingpin_body li:nth-child(5),.jingpin_body li:nth-child(10) {
+	margin-right: 0;
+}
+.jingpin_body li:hover {
+	box-shadow: 1px 3px 8px rgba(0,0,0,.2);
+	transform: translateY(-5px);
+}
+.jingpin_body img {
+	width: 100%;
+}
+.jingpin_body a {
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.jingpin_body p {
+	margin: 0 20px;
+}
+.jingpin_body p:nth-child(2) {
+	font-size: 14px;
+	color: #050505;
+	margin-top: 22px;
+}
+.jingpin_body p:nth-child(3) {
+	font-size: 12px;
+	margin-top: 18px;
+	color: #999;
+}
+.jingpin_body p:nth-child(3) span {
+	color: #ff7c2d;
+}
+.jingpin_body p:nth-child(3) i {
+	display: inline-block;
+	width: 3px;
+	height: 3px;
+	background-color: #999999;
+	margin: 0px 8px 2px;
+}
+/*精品部分end*/

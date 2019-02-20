@@ -1,0 +1,286 @@
+.w {
+	margin: auto;
+	width: 1200px;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+li {
+	list-style: none;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img {
+	vertical-align: top;
+}
+h1,h5,p {
+	margin: 0;
+	padding: 0;
+}
+dd,dl {
+	margin: 0;
+}
+.clearfix:after {
+	content:"";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	*zoom:1;
+}
+input,button {
+	margin: 0;
+	padding: 0;
+}
+@font-face {  /*声明字体  引用字体*/
+	  font-family: "icomoon";  /*我们自己起名字可以*/
+	  src:  url('../fonts/icomoon.eot?7kkyc2');
+	  src:  url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+	    url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+	    url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+	    url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+	  font-style: normal;  /*倾斜字体正常*/
+	  font-weight: normal;
+		}
+
+/*头部导航栏start*/
+body {
+	background-color: #f3f5f7;
+}
+.header {
+	height: 101px;
+}
+.header .w {
+	height: 101px;
+	position: relative;
+	padding: 30px 0 29px 0;
+}
+.logo {
+	width: 200px;
+	height: 43px;
+	background: url(../images/logo.png) no-repeat;
+	position: absolute;
+	top: 29px;
+	left: -200px;
+}
+.logo a {
+	display: block;
+	height: 43px;
+	text-indent: -999px;
+	overflow: hidden;
+}
+nav {
+	height: 42px;
+	width: 401px;
+	padding: 12px 0 13px 0;
+	line-height: 18px;
+}
+nav a {
+	float: left;
+	text-decoration: none;
+	font-size: 18px;
+	color: #050505;
+	margin-right: 42px;
+	position: relative;
+}
+nav a:first-child {
+	margin-left: 74px;
+}
+nav .line {
+	width: 54px;
+	height: 2px;
+	background-color: #00a4ff;
+	position: absolute;
+	display: none;
+	
+}
+nav a:first-child:hover .line {
+	display: block;
+	bottom: -13px;
+	left: -8px;
+}
+nav a:nth-child(2):hover .line {
+	display: block;
+	bottom: -13px;
+	left: -8px;
+}
+nav a:last-child:hover .line {
+	display: block;
+	bottom: -13px;
+	left: -8px;
+	width: 92px;
+}
+.serach {
+	width: 411px;
+	height: 40px;
+	margin: 1px 0 1px 285px;
+}
+.serach input {
+	width: 362px;
+	height: 40px;
+	outline: none;
+	border: 1px solid #00a4ff;
+	font-size: 14px;
+	padding-left: 20px;
+	float: left;
+}
+.serach button {
+	width: 49px;
+	height: 40px;
+	background-color: #00a4ff;
+	float: left;
+	border: 0;
+	font-family: "icomoon";
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	line-height: 40px;
+	outline: none;
+	cursor: pointer;
+}
+.personal {
+	height: 42px;
+	width: 350px;
+	line-height: 42px;
+	position: absolute;
+	top: 30px;
+	right: -247px;
+	
+}
+.gerenzhongxin {
+	font-size: 14px;
+	color: #666666;
+	text-decoration: none;
+	margin-left: 32px;
+}
+.xiaoxi {
+	display: inline-block;
+	height: 16px;
+	width: 14px;
+	margin-left: 32px;
+}
+.xiaoxi a{
+	height: 16px;
+	display: block;
+	position: relative;
+	background: url(../images/lingdang.png) no-repeat center;
+	margin-top: 2px;
+}
+.xiaoxi a::after {
+	content: "";
+	display: block;
+	width: 6px;
+	height: 6px;
+	background-color: #ff3000;
+	position: absolute;
+	left: 12px;
+	top: -2px;
+	border-radius: 50%;
+}
+.touxiang {
+	display: inline-block;
+	margin-left: 32px;
+	position: relative;
+	padding-left: 39px;
+}
+.touxiang_inner {
+	background: url(../images/touxiang.png);
+	width: 33px;
+	height: 33px;
+	position: absolute;
+	left: 0;
+	top: 5px;
+}
+.touxiang_inner a {
+	display: block;
+	width: 100%;
+	height: 100px;
+	border-radius: 50%;
+}
+.touxiang a {
+	font-size: 14px;
+	color: #666666;
+	text-decoration: none;
+}
+.personal a:hover {
+	color: #f10215;
+}
+/*头部导航栏end*/
+/*底部start*/
+.footer {
+	background-color: #fff;
+}
+.footer .w {
+	height: 420px;
+	padding: 30px 20px 0;
+}
+.logo_foot {
+	width: 200px;
+	height: 43px;
+	background: url(../images/logo.png) no-repeat;	
+	overflow: hidden;
+}
+.logo_foot {
+	text-indent: -999px;
+}
+.copyright {
+	float: left;
+}
+.copyright p {
+	font-size: 12px;
+	color: #666666;
+	margin: 23px 0 16px 0;
+}
+.copyright>a {
+	display: block;
+	width: 120px;
+	height: 36px;
+	border: 1px solid #00a4ff;
+	text-align: center;
+	line-height: 36px;
+	font-size: 16px;
+	color: #00a4ff;
+	text-decoration: none;
+}
+.copyright>a:hover {
+	background-color: #00a4ff;
+	color: #fff;
+}
+.help {
+	float: right;
+}
+.help dl {
+	float: left;
+	margin-left: 145px;
+}
+.help dl:nth-child(3) {
+	margin-right: 10px;
+}
+.help dt {
+	height: 24px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #6e6e6e;
+	margin-bottom: 7px;
+}
+.help dd {
+	height: 20px;
+	line-height: 20px;
+}
+.help a {
+	font-size: 12px;
+	color: #333;
+	text-decoration: none;
+}
+.help a:hover {
+	color: #00a4ff;
+}
+/*底部end*/
